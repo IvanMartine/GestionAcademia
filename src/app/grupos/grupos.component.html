@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="d-flex justify-content-between mt-4">
+    <h4>Mantenimiento Grupos</h4>
+    <button class="btn btn-success">Agregar</button>
+    </div>
+    <table class="table table-bordered mt-4">
+    <thead>
+    <tr>
+    <th>IdCarrera</th>
+    <th>IdMateria</th>
+    <th>IdProfesor</th>
+    <th>Ciclo</th>
+    <th>Anio</th>
+    <th>IdGrupo</th>
+    </tr>
+    </thead>
+    <tbody>
+    @for (item of lstGrupos; track index; let index = $index) {
+    <tr>
+    <td>{{item.IdCarrera}}</td>
+    <td>{{item.IdMateria}}</td>
+    <td>{{item.IdProfesor}}</td>
+    <td>{{item.Ciclo}}</td>
+    <td>{{item.Anio}}</td>
+    <td>{{item.IdGrupo}}</td>
+    <td>
+    <!-- Podemos enviar valores a metodos en el .ts de esta
+    forma-->
+    <button class="btn btn-primary">Actualizar</button>
+    <!-- Esta es otra forma con la que podemos enviar valores a
+    metodos en el .ts-->
+    <button class="btn btn-danger ml-2">Eliminar</button>
+    </td>
+    </tr>
+    }
+    </tbody>
+    </table>
+    </div>
