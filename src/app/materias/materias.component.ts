@@ -1,5 +1,4 @@
-import { Component, inject } from '@angular/core';
-import { EstudiantesService } from '../services/estudiantes.service';
+import { Component, inject } from '@angular/core';;
 import { CommonModule } from '@angular/common';
 import { Materia } from '../interfaces/materia.interface';
 import { MateriasService } from '../services/materias.service';

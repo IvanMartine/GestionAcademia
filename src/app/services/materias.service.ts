@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { endpoints } from '../utils/endpoints';
-import { Materia} from '../interfaces/materia.interface';
+import { Materia } from '../interfaces/materia.interface';
+
 @Injectable({
 providedIn: 'root'
 })

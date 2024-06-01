@@ -1,8 +1,7 @@
 import { Component, inject } from '@angular/core';
-import { EstudiantesService } from '../services/estudiantes.service';
 import { CommonModule } from '@angular/common';
 import { Grupo } from '../interfaces/grupo.interface';
-import { GruposService } from '../services/Grupos.service';
+import { GruposService } from '../services/grupos.service';
 @Component({
 selector: 'app-grupos',
 standalone: true,
